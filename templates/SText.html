@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet"  href="../static/index.css">
+        <title>Search By Text</title>
+       
+    </head>
+    <body>
+        <div class="main">
+            <form action = {{url_for('predictT')}} method='POST'>
+                <input name = 'title' type='text' placeholder='Enter Your Text Here'>
+                &nbsp&nbsp&nbsp
+                <input class="button" type='submit' value='Predict'>
+            </form>
+        </div>
+    </body>
+</html>

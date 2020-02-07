@@ -1,0 +1,34 @@
+html {
+    background: linear-gradient(rgb(20, 214, 240), rgb(233, 53, 53));
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: auto;
+    margin:auto;
+    
+}
+
+.button {
+    background-color:rgba(82, 203, 207, 0.973);
+    padding: 1px;
+}
+
+.main {
+    margin: auto;
+    text-align: center;
+    border: 3px solid rgb(221, 10, 10);
+    background: linear-gradient(rgb(184, 54, 71), rgb(255, 0, 0));
+    padding: 5px;
+}
+
+.intro {
+    margin:auto;
+    width:60%;
+    border: 3px black solid;
+}
+
+.patent {
+    font-style: underline;
+    margin: auto;
+
+    text-align: center;
+}
