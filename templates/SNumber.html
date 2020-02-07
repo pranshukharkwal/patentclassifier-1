@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head><link rel="stylesheet"  href="../static/index.css"><title>Flask Home Page</title></head>
+    <head>
+    	<link rel="stylesheet"  href="../static/index.css">
+    	<title>Patent Number</title>
+
+    </head>
     <body>
+    	<div class="topnav">
+          <a  href="../templates/index.html">Home</a>
+          <a class="active">By Number</a>
+          <a href="../templates/SText.html">By Title</a>
+          <a  id="about" href="../templates/About.html">About</a>
+    </div>
+    	<br>
         <div class="main">
+        	<h1> CLASSIFY THE PATENT BY PUBLICATION NUMBER </h1>
+    		
+    		<p> Enter the publication number, and the corresponding title will be fetched, and the prediction will be made on basis of that.</p>
+            
             <form action = {{url_for('predictN')}} method = 'POST'>
                 <input name='input' type = 'text'>
-                <input type='submit' name='button' value='Predict'>
+                <input class="button" type='submit' name='button' value='Predict'>
             </form>
         </div>
+
     </body>
+     <footer>
+        Made by TEAM Crack_code
+    </footer>
 </html>

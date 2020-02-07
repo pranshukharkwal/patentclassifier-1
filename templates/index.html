@@ -2,23 +2,24 @@
 <html>
     <head>
     <link rel="stylesheet" href="../static/index.css">
-    <title>Home Page</title></head>
+    <title>Home Page</title>
     
-    
-    
+    </head>
         
     <body>
         
-        <div class="intro">
-        <center>
-            <p class="patent"><b><h1><u>PATENT RECOGINITION</u></h1></b></p>
-            <p>We have designed an ML model to classify patent numbers. Proceed further to experience the classification.</p>
-            
-        </center>
-        </div>
-        <br>
-        <div class="main">
-            <form action={{url_for('Select')}} method = 'POST'>
+    <div class="topnav">
+          <a class="active" href="#home">Home</a>
+          <a href="../templates/SNumber.html">By Number</a>
+          <a href="../templates/SText.html">By Title</a>
+          <a  id="about" href="../templates/About.html">About</a>
+    </div>
+    <br>
+    <div class="intro">
+            <center>
+                <p id="patent"><b><h1>PATENT RECOGINITION</h1></b></p>
+                <p>We have designed an ML model to classify patent numbers. Proceed further to experience the classification.</p>
+                 <form action={{url_for('Select')}} method = 'POST'>
                 <select name='options'>
                     <option value='None'>None</option>
                     <option value = 'SText'> Search By Title</option>
@@ -27,6 +28,13 @@
                 &nbsp&nbsp&nbsp &nbsp
                 <input class="button" type='submit' value='SELECT'>
             </form>
+                
+            </center>
         </div>
+       
+       
     </body>
+    <footer>
+        Made by TEAM Crack_code
+    </footer>
 </html>

@@ -7,12 +7,26 @@
        
     </head>
     <body>
+    	<div class="topnav">
+          <a href="../templates/index.html" href="#home">Home</a>
+          <a href="../templates/SNumber.html">By Number</a>
+          <a class="active">By Title</a>
+          <a id="about" href="../templates/about.html">About</a>
+    	</div>
+    	<br>
         <div class="main">
             <form action = {{url_for('predictT')}} method='POST'>
+                <label for="title"><h1>CLASSIFY PATENT BY TITLE</h1></label>
+                <p>
+                	Enter the patent by using the title.
+         		</p>
                 <input name = 'title' type='text' placeholder='Enter Your Text Here'>
                 &nbsp&nbsp&nbsp
                 <input class="button" type='submit' value='Predict'>
             </form>
         </div>
     </body>
+     <footer>
+        Made by TEAM Crack_code
+    </footer>
 </html>
